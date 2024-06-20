@@ -7,11 +7,9 @@ class User(models.Model):
     email = models.EmailField(max_length=150)
     birthday = models.DateField()
     
-    def __init__(self):   
+    def __str__(self):   
         return self.name
-        return self.email
-        return self.bio
-        return self.birthday
+        
     
 class Category(models.Model):
     name = models.CharField(max_length=120)

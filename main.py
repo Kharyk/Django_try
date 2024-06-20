@@ -2,23 +2,23 @@ import django_setup
 
 from game.models import User, Category, Product, Players, Games, MyModel
 
-#user1 = User(name="Alina",
-#             bio='...',
-#             email='alina@gmail.com',
-#             birthday="2009-03-10"
-#             )
-#user2 = User(name="Oleg",
-#             bio='...',
-#             email='oleg@gmail.com',
-#             birthday="2008-04-12"
-#             )
+user1 = User(name="Alina",
+             bio='...',
+             email='alina@gmail.com',
+             birthday="2009-03-10"
+             )
+user2 = User(name="Oleg",
+             bio='...',
+             email='oleg@gmail.com',
+             birthday="2008-04-12"
+             )
 
-#user1.save()
-#user2.save()
+user1.save()
+user2.save()
 
-#user = User.objects.filter(id=1).all()#user = User.objects.get(id=1)
-#print(user)
-#print(user[0],email)
+user = User.objects.filter(id=1).all()#user = User.objects.get(id=1)
+print(user)
+print(user[0],email)
 
 #not_needed_user = User.objects.get(id=2)
 #not_needed_user.delete()
@@ -50,7 +50,7 @@ from game.models import User, Category, Product, Players, Games, MyModel
 #category = Category.objects.get(id=1)
 #print(callable.product_set.all())
 
-Players(name="Cat123").save()
+'''Players(name="Cat123").save()
 Players(name="Fish123").save()
 
 Games(title="Snake").save()
@@ -81,4 +81,4 @@ MyModel.objects.create(
     #date_time= "2024-06-12 22:25",
     related= game_1,
     
-)
+) '''
